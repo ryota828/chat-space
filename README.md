@@ -24,6 +24,15 @@ Things you may want to cover:
 - has_many :groups thogh: :group_users
 - has_many :messages
 
+## groupテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|text|null: false|
+
+### Association
+- has_many :users,  through:  :group_users
+- has_many :messages
+
 
 
 
