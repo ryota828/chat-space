@@ -12,6 +12,21 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+## userテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|name|string|null: false|
+
+### Association
+- has_many :groups thogh: :group_users
+- has_many :messages
+
+
+
+
 
 * Database initialization
 
