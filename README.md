@@ -33,6 +33,15 @@ Things you may want to cover:
 - has_many :users,  through:  :group_users
 - has_many :messages
 
+## group_usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- belongs_to :group
+
 
 
 
