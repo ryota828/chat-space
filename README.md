@@ -10,7 +10,7 @@
 |name|string|null: false|
 
 ### Association
-- has_many :groups thogh: :group_users
+- has_many :groups through: :group_users
 - has_many :messages
 
 ## groupテーブル
