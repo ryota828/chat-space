@@ -14,6 +14,14 @@
   &__user-name{
     height: 100px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+      height: 20px;
+      width: 260px;
+      background-color: #333333;
+    }
   }
   &__group-list{
     height: calc(100% - 100px);
