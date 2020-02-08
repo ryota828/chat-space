@@ -4,6 +4,14 @@
     .side-bar
       .side-bar__user-name
         .side-bar__user-name__box
-          .side-bar__user-name__box__name Ryota Kojima
+          .side-bar__user-name__box__name
+            Ryota Kojima
           .side-bar__user-name__box__menu
+            %ul
+            %li
+              = link_to "#", class: "side-bar__user-name__box__menu__icon--edit" do
+                = icon('fas', 'edit',  class: "side-bar__user-name__box__menu__icon")
+            %li
+              = link_to "#", class: "side-bar__user-name__box__menu__icon--cog" do
+                = icon('fas', 'cog',  class: "side-bar__user-name__box__menu__icon")
       .side-bar__group-list
