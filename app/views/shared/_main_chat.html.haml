@@ -3,5 +3,13 @@
   %body
     .main-chat
       .main-chat__group-info
+        .main-chat__group-info__contents
+          .main-chat__group-info__contents__group-name
+            Test
+            .main-chat__group-info__contents__group-name__member-list
+              Member:apple
+          .main-chat__group-info__contents__edit-btn
+            = link_to "#", class: "main-chat__group-info__contents__edit-btn--icon" do
+              Edit
       .main-chat__message-list
       .main-chat__message-form
