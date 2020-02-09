@@ -110,6 +110,34 @@
     height: calc(100vh - 190px);
     width: 100%;
     background-color: #fafafa;
+    &__contents{
+      padding-left: 40px;
+      padding-top: 35px;
+      padding-right: 40px;
+      padding-bottom: 35px;
+      &__message{
+        color: #333333;
+        font-size: 16px;
+        padding-bottom: 46px;
+        &__wrote-info{
+          display: flex;
+          &__writer{
+            color: #333333;
+            font-size: 16px;
+          }
+          &__wrote-time{
+            color: #999999;
+            font-size: 12px;
+            margin-left: 10px;
+          }
+        }
+        &__detail{
+          color: #434A54;
+          font-size: 14px;
+          margin-top: 12px;
+        }
+      }
+    }
   }
   &__message-form{
     height: 90px;
