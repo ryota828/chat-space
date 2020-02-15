@@ -1,0 +1,49 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__contents
+      .main-chat__group-info__contents__group-name
+        Test
+        .main-chat__group-info__contents__group-name__member-list
+          Member:apple
+      .main-chat__group-info__contents__edit-btn
+        = link_to "#", class: "main-chat__group-info__contents__edit-btn--icon" do
+          Edit
+  .main-chat__message-list
+    .main-chat__message-list__contents
+      .main-chat__message-list__contents__message
+        .main-chat__message-list__contents__message__wrote-info
+          .main-chat__message-list__contents__message__wrote-info__writer
+            Ryota
+          .main-chat__message-list__contents__message__wrote-info__wrote-time
+            2020/02/09(Sun) 15:15:15
+        .main-chat__message-list__contents__message__detail
+          Hello!!
+      .main-chat__message-list__contents__message
+        .main-chat__message-list__contents__message__wrote-info
+          .main-chat__message-list__contents__message__wrote-info__writer
+            Ryota
+          .main-chat__message-list__contents__message__wrote-info__wrote-time
+            2020/02/09(Sun) 15:15:15
+        .main-chat__message-list__contents__message__detail
+          Hello!!
+      .main-chat__message-list__contents__message
+        .main-chat__message-list__contents__message__wrote-info
+          .main-chat__message-list__contents__message__wrote-info__writer
+            Ryota
+          .main-chat__message-list__contents__message__wrote-info__wrote-time
+            2020/02/09(Sun) 15:15:15
+        .main-chat__message-list__contents__message__detail
+          Hello!!
+  .main-chat__message-form
+    .main-chat__message-form__contents
+      .main-chat__message-form__contents__box
+        .main-chat__message-form__contents__box__text
+          %input{type: "text", class: "main-chat__message-form__contents__box__text", placeholder: "type a message"}
+        .main-chat__message-form__contents__box__img
+          %label{class: "main-chat__message-form__contents__box__img--btn"}
+            = icon('far', 'image fa-2x')
+            %input{type: "file", class: "main-chat__message-form__contents__box__img__file"}
+      .main-chat__message-form__contents__send-btn
+        %label{class: "main-chat__message-form__contents__send-btn"}
+          Send
+          %input{type: "submit", class: "main-chat__message-form__contents__send-btn__send"}
