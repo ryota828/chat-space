@@ -6,7 +6,7 @@
       .side-bar__user-name__box__menu
         %ul
         %li
-          = link_to "#", class: "side-bar__user-name__box__menu__icon--edit" do
+          = link_to new_group_path, class: "side-bar__user-name__box__menu__icon--edit" do
             = icon('fas', 'edit',  class: "side-bar__user-name__box__menu__icon")
         %li
           = link_to edit_user_path(current_user), class: "side-bar__user-name__box__menu__icon--cog" do
