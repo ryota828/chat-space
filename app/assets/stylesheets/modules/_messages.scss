@@ -47,7 +47,6 @@
   &__group-list{
     height: calc(100% - 100px);
     width: 100%;
-    color: #ffffff;
     font-weight: bold;
     background-color: #2f3e51;
     &__group{
@@ -57,10 +56,12 @@
       padding-right: 20px;
       padding-bottom: 40px;
       &__group-name{
+        color: #fff;
         font-size: 15px;
         margin-bottom: 5px;
       }
       &__latest-message{
+        color: #fff;
         font-size: 11px;
       }
     }
