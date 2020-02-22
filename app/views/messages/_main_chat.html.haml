@@ -4,7 +4,10 @@
       .main-chat__group-info__contents__group-name
         = @group.name
         .main-chat__group-info__contents__group-name__member-list
-          
+          .left-header__members
+            Member：
+            - @group.users.each do |user|
+              = user.name
       .main-chat__group-info__contents__edit-btn
         = link_to edit_group_path(@group), class: "main-chat__group-info__contents__edit-btn--icon" do
           Edit
