@@ -59,6 +59,9 @@ $('#new_message').on('submit', function(e){
   })
   .always(function(){
     $(".form__submit").removeAttr("disabled");
-    });
+    })
+  .fail(function() {
+    alert("メッセージ送信に失敗しました");
+  })
 })
 });
