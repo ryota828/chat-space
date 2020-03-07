@@ -57,5 +57,8 @@ $('#new_message').on('submit', function(e){
     $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
     $('form')[0].reset();
   })
+  .always(function(){
+    $(".form__submit").removeAttr("disabled");
+    });
 })
 });
