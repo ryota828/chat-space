@@ -8,7 +8,17 @@ $(function() {
       dataType: "json"
     })
       .done(function(users) {
-        console.log("成功です");
+        $("#user-search-result").empty();
+
+        if (users.length !==0){
+          users.forEach(function(user){
+            addUser(user);
+          });
+        } else if (input.length ==0){
+          return false;
+        } else {
+          addNouser();
+        }
       })
       .fail(function() {
         console.log("失敗です");
